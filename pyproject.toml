@@ -16,6 +16,7 @@ passlib = {extras = ["bcrypt"], version = "^1.7.4"}
 pyjwt = "^2.8.0"
 python-dotenv = "^1.0.1"
 aiofiles = "^23.2.1"
+celery = "^5.4.0"
 
 
 [build-system]

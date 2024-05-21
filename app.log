@@ -1,0 +1,81 @@
+2024-05-21 07:02:20,318 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 07:02:20,323 - INFO - Response: 200
+2024-05-21 07:02:20,635 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 07:02:20,663 - INFO - Response: 200
+2024-05-21 07:03:03,225 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 07:03:03,230 - INFO - Response: 200
+2024-05-21 07:03:03,545 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 07:03:03,571 - INFO - Response: 200
+2024-05-21 07:03:52,354 - INFO - Request: POST http://localhost:8000/user/
+2024-05-21 07:03:52,415 - INFO - Response: 422
+2024-05-21 07:06:02,138 - INFO - Request: POST http://localhost:8000/user/
+2024-05-21 07:06:02,154 - INFO - Response: 422
+2024-05-21 07:11:06,437 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 07:11:06,439 - INFO - Response: 200
+2024-05-21 07:11:06,961 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 07:11:07,007 - INFO - Response: 200
+2024-05-21 07:11:11,919 - INFO - Request: POST http://localhost:8000/user/
+2024-05-21 07:11:11,929 - INFO - Response: 422
+2024-05-21 07:12:04,658 - INFO - Request: POST http://localhost:8000/user/
+2024-05-21 07:12:04,662 - INFO - Response: 422
+2024-05-21 07:12:29,838 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 07:12:29,840 - INFO - Response: 200
+2024-05-21 07:12:30,557 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 07:12:30,595 - INFO - Response: 200
+2024-05-21 07:13:01,799 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 07:13:01,801 - INFO - Response: 200
+2024-05-21 07:13:02,199 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 07:13:02,228 - INFO - Response: 200
+2024-05-21 07:13:06,460 - INFO - Request: POST http://localhost:8000/user/
+2024-05-21 07:13:06,560 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 664c0328d56eb9a811980889, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c0328d56eb9a811980889"}, "remainingTimeMS": 30}
+2024-05-21 07:13:07,611 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "F:\Code Grapher Task\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 07:14:13,532 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 07:14:13,539 - INFO - Response: 200
+2024-05-21 07:14:13,864 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 07:14:13,891 - INFO - Response: 200
+2024-05-21 07:14:35,007 - INFO - Request: POST http://localhost:8000/user/
+2024-05-21 07:14:35,056 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 664c037113b65b0e5b4a3422, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c037113b65b0e5b4a3422"}, "remainingTimeMS": 30}
+2024-05-21 07:14:35,141 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "F:\Code Grapher Task\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 07:14:35,707 - INFO - Response: 200
+2024-05-21 07:21:41,217 - INFO - Request: POST http://localhost:8000/user/login
+2024-05-21 07:21:41,616 - INFO - Response: 400
+2024-05-21 07:22:06,563 - INFO - Request: POST http://localhost:8000/user/login
+2024-05-21 07:22:06,932 - INFO - Response: 200
+2024-05-21 07:49:01,472 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 07:49:01,481 - INFO - Response: 200
+2024-05-21 07:49:01,880 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 07:49:02,072 - INFO - Response: 200
+2024-05-21 08:13:06,879 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 08:13:06,889 - INFO - Response: 200
+2024-05-21 08:13:07,258 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 08:13:07,472 - INFO - Response: 200
+2024-05-21 08:13:52,126 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 08:13:52,130 - INFO - Response: 404
+2024-05-21 08:22:32,414 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 08:22:32,419 - INFO - Response: 200
+2024-05-21 08:22:32,823 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 08:22:32,851 - INFO - Response: 200
+2024-05-21 08:23:12,928 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 08:23:12,929 - INFO - Response: 404
+2024-05-21 08:24:44,722 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 08:40:44,989 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 08:40:44,992 - INFO - Response: 200
+2024-05-21 08:40:45,429 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 08:40:45,452 - INFO - Response: 200
+2024-05-21 08:41:47,700 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 08:44:11,150 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 08:46:19,543 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 08:46:46,847 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 08:49:35,032 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 08:51:57,753 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 08:54:22,305 - INFO - Request: POST http://localhost:8000/token

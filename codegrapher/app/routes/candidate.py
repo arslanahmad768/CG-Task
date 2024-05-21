@@ -1,8 +1,10 @@
-from fastapi import APIRouter, Body, Query, BackgroundTasks
+from fastapi import APIRouter, Body, Query, Depends
 from fastapi.encoders import jsonable_encoder
 from ..helpers import ResponseModel, ErrorResponseModel
 from ..models.candidate import Candidate
+from ..models.user import User
 from fastapi.responses import FileResponse
+from ..api.users import get_current_active_user
 
 from ..api.candidate import (
     add_candidate,
@@ -28,7 +30,7 @@ async def add_candidate_data(candidate: Candidate = Body(...)):
     return ResponseModel(new_candidate, "Candidate added successfully.")
 
 @CandidateRouter.get("/all-candidates", response_description="candidates retrieved")
-async def get_candidates(page: int = Query(1, alias="page"), limit: int = Query(10, alias="limit")):
+async def get_candidates(current_user: User = Depends(get_current_active_user),page: int = Query(1, alias="page"), limit: int = Query(10, alias="limit")):
     candidates = await retrieve_candidates(page, limit)
     if candidates:
         return ResponseModel(candidates, "Candidates data retrieved successfully")

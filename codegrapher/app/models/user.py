@@ -2,15 +2,25 @@
 
 from pydantic import BaseModel, EmailStr, Field
 from passlib.context import CryptContext
+from typing import Union
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+    
+class TokenData(BaseModel):
+    email: Union[str, None] = None
 
-class UserSchema(BaseModel):
-    fullname: str = Field(...)
+class User(BaseModel):
+    fullname: Union[str, None] = None
     email: EmailStr = Field(...)
-    password: str = Field(..., min_length=8)
     city: str = Field(..., min_length=1, max_length=50)
+    
+        
+class UserInDB(User):
+    password: str
     
     class Config:
         json_schema_extra  = {
@@ -21,9 +31,7 @@ class UserSchema(BaseModel):
                 "city": "New York",
             }
         }
-    
-    def hash_password(self) -> str:
-        return pwd_context.hash(self.password)
+
 
 class UserLoginSchema(BaseModel):
     email: EmailStr = Field(...)
