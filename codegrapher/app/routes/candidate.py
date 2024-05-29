@@ -1,11 +1,11 @@
-from fastapi import APIRouter, Body, Query, Depends
+from typing import Annotated, Optional
+from fastapi import APIRouter, Body, Query, Depends, BackgroundTasks
 from fastapi.encoders import jsonable_encoder
 from ..helpers import ResponseModel, ErrorResponseModel
 from ..models.candidate import Candidate
 from ..models.user import User
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from ..api.users import get_current_active_user
-
 from ..api.candidate import (
     add_candidate,
     retrieve_candidates,
@@ -18,57 +18,130 @@ from ..api.candidate import (
 CandidateRouter = APIRouter()
 
 
-@CandidateRouter.get("/generate-report", response_description="Candidate data added into the database")
-async def root():
-    file_path  = await generate_csv_report()
-    return FileResponse(file_path, media_type='text/csv')
+@CandidateRouter.get("/generate-report", response_description="Generate CSV report of all candidates")
+async def generate_report():
+    """
+    Generates a CSV report of all candidates and returns the file.
+
+    Returns:
+        FileResponse: CSV file containing the report.
+    """
+    try:
+        file_path = await generate_csv_report()
+        return FileResponse(file_path, media_type='text/csv', filename='report.csv')
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return ErrorResponseModel("An error occurred.", 404, f"{e}")
 
 @CandidateRouter.post("/", response_description="Candidate data added into the database")
-async def add_candidate_data(candidate: Candidate = Body(...)):
+async def add_candidate_data(current_user: User = Depends(get_current_active_user), candidate: Candidate = Body(...)):
+    """
+    Adds a new candidate to the database.
+
+    Args:
+        current_user (User): The currently authenticated user.
+        candidate (Candidate): The candidate data to add.
+
+    Returns:
+        ResponseModel: Response with the newly added candidate data.
+    """
     candidate = jsonable_encoder(candidate)
     new_candidate = await add_candidate(candidate)
     return ResponseModel(new_candidate, "Candidate added successfully.")
 
-@CandidateRouter.get("/all-candidates", response_description="candidates retrieved")
-async def get_candidates(current_user: User = Depends(get_current_active_user),page: int = Query(1, alias="page"), limit: int = Query(10, alias="limit")):
-    candidates = await retrieve_candidates(page, limit)
+@CandidateRouter.get("/all-candidates", response_description="Retrieve all candidates with pagination and search")
+async def get_candidates(
+    current_user: User = Depends(get_current_active_user),
+    page: int = Query(1, alias="page"),
+    limit: int = Query(10, alias="limit"),
+    search: Optional[str] = Query(None, alias="search")
+):
+    """
+    Retrieves all candidates with optional pagination and search functionality.
+
+    Args:
+        current_user (User): The currently authenticated user.
+        page (int): Page number for pagination.
+        limit (int): Number of candidates per page.
+        search (Optional[str]): Search term for filtering candidates.
+
+    Returns:
+        ResponseModel: Response with the list of candidates.
+    """
+    candidates = await retrieve_candidates(page, limit, search)
     if candidates:
         return ResponseModel(candidates, "Candidates data retrieved successfully")
-    return ResponseModel(candidates, "Empty list returned")
+    return ResponseModel(candidates, "No record found")
 
+@CandidateRouter.get("/{id}", response_description="Retrieve candidate data by ID")
+async def get_candidate_data(id: str, current_user: User = Depends(get_current_active_user)):
+    """
+    Retrieves candidate data by ID.
 
-@CandidateRouter.get("/{id}", response_description="candidate data retrieved")
-async def get_candidate_data(id):
+    Args:
+        id (str): Candidate ID.
+        current_user (User): The currently authenticated user.
+
+    Returns:
+        ResponseModel: Response with the candidate data if found.
+        ErrorResponseModel: Error response if candidate not found.
+    """
     candidate = await retrieve_candidate(id)
     if candidate:
         return ResponseModel(candidate, "Candidate data retrieved successfully")
     return ErrorResponseModel("An error occurred.", 404, "candidate doesn't exist.")
 
-@CandidateRouter.put("/{id}")
-async def update_candidate_data(id: str, req: Candidate = Body(...)):
-    req = {k: v for k, v in req.dict().items() if v is not None}
-    updated_candidate = await update_candidate(id, req)
+@CandidateRouter.put("/{id}", response_description="Update candidate data by ID")
+async def update_candidate_data(
+    id: str,
+    current_user: User = Depends(get_current_active_user),
+    req: Candidate = Body(...)
+):
+    """
+    Updates candidate data by ID.
+
+    Args:
+        id (str): Candidate ID.
+        current_user (User): The currently authenticated user.
+        req (Candidate): The candidate data to update.
+
+    Returns:
+        ResponseModel: Response with the updated candidate data if successful.
+        ErrorResponseModel: Error response if update failed.
+    """
+    updated_candidate = await update_candidate(id, req.dict())
     if updated_candidate:
         return ResponseModel(
-            "Candidate with ID: {} name update is successful".format(id),
-            "Candidate name updated successfully",
+            updated_candidate,
+            "Candidate updated successfully",
         )
     return ErrorResponseModel(
-        "An error occurred",
+        "Error",
         404,
         "There was an error updating the candidate data.",
     )
 
-@CandidateRouter.delete("/{id}", response_description="Candidate data deleted from the database")
-async def delete_candidate_data(id: str):
+@CandidateRouter.delete("/{id}", response_description="Delete candidate data by ID")
+async def delete_candidate_data(
+    id: str,
+    current_user: User = Depends(get_current_active_user)
+):
+    """
+    Deletes candidate data by ID.
+
+    Args:
+        id (str): Candidate ID.
+        current_user (User): The currently authenticated user.
+
+    Returns:
+        ResponseModel: Response confirming the candidate was deleted.
+        ErrorResponseModel: Error response if candidate not found.
+    """
     deleted_candidate = await delete_candidate(id)
     if deleted_candidate:
         return ResponseModel(
-            "Candidate with ID: {} removed".format(id), "Candidate deleted successfully"
+            {}, "Candidate deleted successfully"
         )
     return ErrorResponseModel(
-        "An error occurred", 404, "Candidate with id {0} doesn't exist".format(id)
+        "Error", 404, "Candidate with id {0} doesn't exist".format(id)
     )
-    
-
-

@@ -1,81 +1,625 @@
-2024-05-21 07:02:20,318 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 07:02:20,323 - INFO - Response: 200
-2024-05-21 07:02:20,635 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 07:02:20,663 - INFO - Response: 200
-2024-05-21 07:03:03,225 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 07:03:03,230 - INFO - Response: 200
-2024-05-21 07:03:03,545 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 07:03:03,571 - INFO - Response: 200
-2024-05-21 07:03:52,354 - INFO - Request: POST http://localhost:8000/user/
-2024-05-21 07:03:52,415 - INFO - Response: 422
-2024-05-21 07:06:02,138 - INFO - Request: POST http://localhost:8000/user/
-2024-05-21 07:06:02,154 - INFO - Response: 422
-2024-05-21 07:11:06,437 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 07:11:06,439 - INFO - Response: 200
-2024-05-21 07:11:06,961 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 07:11:07,007 - INFO - Response: 200
-2024-05-21 07:11:11,919 - INFO - Request: POST http://localhost:8000/user/
-2024-05-21 07:11:11,929 - INFO - Response: 422
-2024-05-21 07:12:04,658 - INFO - Request: POST http://localhost:8000/user/
-2024-05-21 07:12:04,662 - INFO - Response: 422
-2024-05-21 07:12:29,838 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 07:12:29,840 - INFO - Response: 200
-2024-05-21 07:12:30,557 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 07:12:30,595 - INFO - Response: 200
-2024-05-21 07:13:01,799 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 07:13:01,801 - INFO - Response: 200
-2024-05-21 07:13:02,199 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 07:13:02,228 - INFO - Response: 200
-2024-05-21 07:13:06,460 - INFO - Request: POST http://localhost:8000/user/
-2024-05-21 07:13:06,560 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 664c0328d56eb9a811980889, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c0328d56eb9a811980889"}, "remainingTimeMS": 30}
-2024-05-21 07:13:07,611 - WARNING - (trapped) error reading bcrypt version
+2024-05-20 14:48:32,293 - INFO - APi started......
+2024-05-20 14:48:32,374 - INFO - APi started......
+2024-05-20 14:48:36,093 - INFO - Request: GET http://localhost:8008/health
+2024-05-20 14:48:36,098 - INFO - Response: 200
+2024-05-20 14:49:32,341 - INFO - Request: GET http://localhost:8008/health
+2024-05-20 14:49:32,344 - INFO - Response: 200
+2024-05-20 14:50:48,964 - INFO - Request: GET http://localhost:8008/health
+2024-05-20 14:50:48,967 - INFO - Response: 200
+2024-05-20 14:50:55,657 - INFO - Request: GET http://localhost:8008/health
+2024-05-20 14:50:55,657 - INFO - Response: 200
+2024-05-20 14:51:02,545 - INFO - Request: GET http://localhost:8008/health
+2024-05-20 14:51:02,547 - INFO - Response: 200
+2024-05-20 14:52:01,628 - INFO - APi started......
+2024-05-20 14:52:01,725 - INFO - APi started......
+2024-05-20 14:56:05,059 - INFO - APi started......
+2024-05-20 14:56:05,149 - INFO - APi started......
+2024-05-20 14:56:08,853 - INFO - APi started......
+2024-05-20 14:56:08,922 - INFO - APi started......
+2024-05-20 14:56:13,755 - INFO - APi started......
+2024-05-20 14:56:13,837 - INFO - APi started......
+2024-05-20 14:56:17,810 - INFO - APi started......
+2024-05-20 14:56:17,881 - INFO - APi started......
+2024-05-20 14:56:24,053 - INFO - APi started......
+2024-05-20 14:56:24,120 - INFO - APi started......
+2024-05-20 14:56:26,388 - INFO - APi started......
+2024-05-20 14:56:26,455 - INFO - APi started......
+2024-05-20 14:58:22,089 - INFO - Request: GET http://localhost:8008/health
+2024-05-20 14:58:22,091 - INFO - Response: 200
+2024-05-20 15:17:48,393 - INFO - Request: GET http://localhost:8008/health
+2024-05-20 15:17:48,399 - INFO - Response: 200
+2024-05-20 15:18:32,503 - INFO - Request: GET http://localhost:8008/health
+2024-05-20 15:18:32,504 - INFO - Response: 200
+2024-05-20 15:39:32,501 - INFO - Request: GET http://localhost:8008/health
+2024-05-20 15:39:32,504 - INFO - Response: 200
+2024-05-20 15:39:37,654 - INFO - Request: GET http://localhost:8008/health1
+2024-05-20 15:39:37,654 - INFO - Response: 404
+2024-05-21 11:16:23,847 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3c37fed0acda3f4f4169, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3c37fed0acda3f4f4169"}, "remainingTimeMS": 30}
+2024-05-21 11:17:05,623 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3c61609ce5ce8153a5cc, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3c61609ce5ce8153a5cc"}, "remainingTimeMS": 30}
+2024-05-21 11:17:18,748 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3c6e3581c5c539d94659, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3c6e3581c5c539d94659"}, "remainingTimeMS": 30}
+2024-05-21 11:18:13,374 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3ca5c3823545fdcb4889, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3ca5c3823545fdcb4889"}, "remainingTimeMS": 30}
+2024-05-21 11:20:01,102 - INFO - Request: GET http://127.0.0.1:8000/
+2024-05-21 11:20:01,104 - INFO - Response: 405
+2024-05-21 11:20:01,979 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2024-05-21 11:20:01,979 - INFO - Response: 404
+2024-05-21 11:20:06,599 - INFO - Request: GET http://127.0.0.1:8000/docs
+2024-05-21 11:20:06,601 - INFO - Response: 200
+2024-05-21 11:20:07,616 - INFO - Request: GET http://127.0.0.1:8000/openapi.json
+2024-05-21 11:20:07,667 - INFO - Response: 200
+2024-05-21 11:22:20,647 - INFO - Request: POST http://127.0.0.1:8000/
+2024-05-21 11:22:20,975 - WARNING - (trapped) error reading bcrypt version
 Traceback (most recent call last):
-  File "F:\Code Grapher Task\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
     version = _bcrypt.__about__.__version__
               ^^^^^^^^^^^^^^^^^
 AttributeError: module 'bcrypt' has no attribute '__about__'
-2024-05-21 07:14:13,532 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 07:14:13,539 - INFO - Response: 200
-2024-05-21 07:14:13,864 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 07:14:13,891 - INFO - Response: 200
-2024-05-21 07:14:35,007 - INFO - Request: POST http://localhost:8000/user/
-2024-05-21 07:14:35,056 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 664c037113b65b0e5b4a3422, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c037113b65b0e5b4a3422"}, "remainingTimeMS": 30}
-2024-05-21 07:14:35,141 - WARNING - (trapped) error reading bcrypt version
+2024-05-21 11:22:21,611 - INFO - Response: 200
+2024-05-21 11:23:12,381 - INFO - Request: POST http://127.0.0.1:8000/token
+2024-05-21 11:23:12,393 - INFO - Response: 401
+2024-05-21 11:23:30,724 - INFO - Request: POST http://127.0.0.1:8000/token
+2024-05-21 11:23:30,799 - INFO - Response: 401
+2024-05-21 11:24:05,563 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3e05b67d3971ff0928a5, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3e05b67d3971ff0928a5"}, "remainingTimeMS": 30}
+2024-05-21 11:24:09,737 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3e09c492a865c76a027c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3e09c492a865c76a027c"}, "remainingTimeMS": 30}
+2024-05-21 11:24:41,703 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3e29fc2a23593b5ac6dc, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3e29fc2a23593b5ac6dc"}, "remainingTimeMS": 30}
+2024-05-21 11:24:57,401 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3e39a5f75e4240cfef1d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3e39a5f75e4240cfef1d"}, "remainingTimeMS": 30}
+2024-05-21 11:27:45,388 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3ee1f66bfdf8e592c7b5, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3ee1f66bfdf8e592c7b5"}, "remainingTimeMS": 30}
+2024-05-21 11:27:48,937 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3ee4fceafe6298fe5add, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3ee4fceafe6298fe5add"}, "remainingTimeMS": 30}
+2024-05-21 11:27:52,333 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3ee81d197fe1d7bba84d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3ee81d197fe1d7bba84d"}, "remainingTimeMS": 30}
+2024-05-21 11:27:56,083 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3eeb665ef736c2c3121b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3eeb665ef736c2c3121b"}, "remainingTimeMS": 30}
+2024-05-21 11:28:09,872 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3ef9cd0a4e410b89a188, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3ef9cd0a4e410b89a188"}, "remainingTimeMS": 30}
+2024-05-21 11:28:12,538 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3efc941abb3c60bf00ed, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3efc941abb3c60bf00ed"}, "remainingTimeMS": 30}
+2024-05-21 11:28:26,008 - INFO - Request: POST http://127.0.0.1:8000/token
+2024-05-21 11:28:26,085 - INFO - Response: 401
+2024-05-21 11:28:57,988 - INFO - Request: POST http://127.0.0.1:8000/token
+2024-05-21 11:28:58,011 - WARNING - (trapped) error reading bcrypt version
 Traceback (most recent call last):
-  File "F:\Code Grapher Task\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
     version = _bcrypt.__about__.__version__
               ^^^^^^^^^^^^^^^^^
 AttributeError: module 'bcrypt' has no attribute '__about__'
-2024-05-21 07:14:35,707 - INFO - Response: 200
-2024-05-21 07:21:41,217 - INFO - Request: POST http://localhost:8000/user/login
-2024-05-21 07:21:41,616 - INFO - Response: 400
-2024-05-21 07:22:06,563 - INFO - Request: POST http://localhost:8000/user/login
-2024-05-21 07:22:06,932 - INFO - Response: 200
-2024-05-21 07:49:01,472 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 07:49:01,481 - INFO - Response: 200
-2024-05-21 07:49:01,880 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 07:49:02,072 - INFO - Response: 200
-2024-05-21 08:13:06,879 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 08:13:06,889 - INFO - Response: 200
-2024-05-21 08:13:07,258 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 08:13:07,472 - INFO - Response: 200
-2024-05-21 08:13:52,126 - INFO - Request: POST http://localhost:8000/token
-2024-05-21 08:13:52,130 - INFO - Response: 404
-2024-05-21 08:22:32,414 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 08:22:32,419 - INFO - Response: 200
-2024-05-21 08:22:32,823 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 08:22:32,851 - INFO - Response: 200
-2024-05-21 08:23:12,928 - INFO - Request: POST http://localhost:8000/token
-2024-05-21 08:23:12,929 - INFO - Response: 404
-2024-05-21 08:24:44,722 - INFO - Request: POST http://localhost:8000/token
-2024-05-21 08:40:44,989 - INFO - Request: GET http://localhost:8000/docs
-2024-05-21 08:40:44,992 - INFO - Response: 200
-2024-05-21 08:40:45,429 - INFO - Request: GET http://localhost:8000/openapi.json
-2024-05-21 08:40:45,452 - INFO - Response: 200
-2024-05-21 08:41:47,700 - INFO - Request: POST http://localhost:8000/token
-2024-05-21 08:44:11,150 - INFO - Request: POST http://localhost:8000/token
-2024-05-21 08:46:19,543 - INFO - Request: POST http://localhost:8000/token
-2024-05-21 08:46:46,847 - INFO - Request: POST http://localhost:8000/token
-2024-05-21 08:49:35,032 - INFO - Request: POST http://localhost:8000/token
-2024-05-21 08:51:57,753 - INFO - Request: POST http://localhost:8000/token
-2024-05-21 08:54:22,305 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 11:28:58,694 - INFO - Response: 200
+2024-05-21 11:29:07,030 - INFO - Request: GET http://127.0.0.1:8000/candidate/all-candidates?page=1&limit=10
+2024-05-21 11:29:07,031 - INFO - Response: 401
+2024-05-21 11:30:10,627 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3f7242c52b945ae7432e, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3f7242c52b945ae7432e"}, "remainingTimeMS": 30}
+2024-05-21 11:30:17,601 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3f79f6542b122f5002a3, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3f79f6542b122f5002a3"}, "remainingTimeMS": 30}
+2024-05-21 11:30:21,297 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3f7d8371ed571d0b0fa8, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3f7d8371ed571d0b0fa8"}, "remainingTimeMS": 30}
+2024-05-21 11:30:24,797 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3f8085e0e42d1155f914, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3f8085e0e42d1155f914"}, "remainingTimeMS": 30}
+2024-05-21 11:30:39,955 - INFO - Request: GET http://127.0.0.1:8000/candidate/all-candidates?page=1&limit=10
+2024-05-21 11:30:39,958 - INFO - Response: 401
+2024-05-21 11:31:34,163 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c3fc60908b708e472d45c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c3fc60908b708e472d45c"}, "remainingTimeMS": 30}
+2024-05-21 12:04:59,043 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c479add3e3f94bb2edbc3, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c479add3e3f94bb2edbc3"}, "remainingTimeMS": 30}
+2024-05-21 12:05:14,056 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c47a94312b62c3f36e719, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c47a94312b62c3f36e719"}, "remainingTimeMS": 30}
+2024-05-21 12:05:22,459 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c47b2ed24c2f629bd95b8, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c47b2ed24c2f629bd95b8"}, "remainingTimeMS": 30}
+2024-05-21 12:07:54,420 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c484a64d6a619dd0f1468, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c484a64d6a619dd0f1468"}, "remainingTimeMS": 30}
+2024-05-21 12:07:58,511 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c484e90a874be9ea77e0e, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c484e90a874be9ea77e0e"}, "remainingTimeMS": 30}
+2024-05-21 12:09:33,789 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c48ad8f81ee4fc6ae5441, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c48ad8f81ee4fc6ae5441"}, "remainingTimeMS": 30}
+2024-05-21 12:09:35,886 - INFO - Request: GET http://127.0.0.1:8008/
+2024-05-21 12:09:35,888 - INFO - Response: 405
+2024-05-21 12:09:36,459 - INFO - Request: GET http://127.0.0.1:8008/favicon.ico
+2024-05-21 12:09:36,460 - INFO - Response: 404
+2024-05-21 12:09:48,534 - INFO - Request: GET http://127.0.0.1:8008/docs
+2024-05-21 12:09:48,536 - INFO - Response: 200
+2024-05-21 12:09:50,395 - INFO - Request: GET http://127.0.0.1:8008/openapi.json
+2024-05-21 12:09:50,433 - INFO - Response: 200
+2024-05-21 12:10:15,569 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 12:10:15,582 - INFO - Response: 401
+2024-05-21 12:10:32,350 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 12:10:32,356 - INFO - Response: 401
+2024-05-21 12:11:35,496 - INFO - Request: POST http://127.0.0.1:8008/
+2024-05-21 12:11:35,576 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 12:11:36,084 - INFO - Response: 200
+2024-05-21 12:12:04,975 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 12:12:05,378 - INFO - Response: 200
+2024-05-21 12:12:18,713 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 12:12:18,715 - INFO - Response: 401
+2024-05-21 12:14:54,403 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c49ee4f66fbbb24f50ae3, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c49ee4f66fbbb24f50ae3"}, "remainingTimeMS": 30}
+2024-05-21 12:14:58,135 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c49f1f2fec2dfea7fac21, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c49f1f2fec2dfea7fac21"}, "remainingTimeMS": 30}
+2024-05-21 12:15:04,217 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 12:15:04,231 - INFO - Response: 401
+2024-05-21 12:18:47,706 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c4ad754898467b98a6c18, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c4ad754898467b98a6c18"}, "remainingTimeMS": 30}
+2024-05-21 12:18:59,814 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c4ae3c63062b134d49e5f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c4ae3c63062b134d49e5f"}, "remainingTimeMS": 30}
+2024-05-21 12:19:13,090 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c4af00d84316c73758b10, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c4af00d84316c73758b10"}, "remainingTimeMS": 30}
+2024-05-21 12:19:16,484 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c4af485a6ea4acdcadc78, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c4af485a6ea4acdcadc78"}, "remainingTimeMS": 30}
+2024-05-21 12:20:11,279 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 12:20:11,293 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 12:20:11,696 - INFO - Response: 200
+2024-05-21 12:54:17,249 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 12:54:17,294 - INFO - Response: 401
+2024-05-21 13:02:12,507 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 13:02:12,509 - INFO - Response: 401
+2024-05-21 13:04:41,560 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c55992ffaa71879129e96, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c55992ffaa71879129e96"}, "remainingTimeMS": 30}
+2024-05-21 13:04:58,059 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c55a9dc2ae6030642d104, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c55a9dc2ae6030642d104"}, "remainingTimeMS": 30}
+2024-05-21 13:05:21,798 - INFO - Request: GET http://127.0.0.1:8008/docs
+2024-05-21 13:05:21,799 - INFO - Response: 200
+2024-05-21 13:05:22,120 - INFO - Request: GET http://127.0.0.1:8008/openapi.json
+2024-05-21 13:05:22,143 - INFO - Response: 200
+2024-05-21 13:05:32,736 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 13:05:32,815 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 13:05:33,180 - INFO - Response: 200
+2024-05-21 13:05:43,040 - INFO - Request: GET http://127.0.0.1:8008/candidate/users/me/
+2024-05-21 13:05:43,042 - INFO - Response: 401
+2024-05-21 13:07:52,174 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c565826ef05c99caf00d1, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c565826ef05c99caf00d1"}, "remainingTimeMS": 30}
+2024-05-21 13:07:54,641 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c565a46fa25e80926c06e, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c565a46fa25e80926c06e"}, "remainingTimeMS": 30}
+2024-05-21 13:08:10,708 - INFO - Request: GET http://127.0.0.1:8008/docs
+2024-05-21 13:08:10,709 - INFO - Response: 200
+2024-05-21 13:08:11,045 - INFO - Request: GET http://127.0.0.1:8008/openapi.json
+2024-05-21 13:08:11,071 - INFO - Response: 200
+2024-05-21 13:08:25,018 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 13:08:25,035 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 13:08:25,387 - INFO - Response: 200
+2024-05-21 13:08:37,892 - INFO - Request: GET http://127.0.0.1:8008/candidate/users/me/
+2024-05-21 13:08:37,893 - INFO - Response: 401
+2024-05-21 14:27:05,151 - INFO - Request: GET http://127.0.0.1:8008/candidate/users/me/
+2024-05-21 14:27:05,165 - INFO - Response: 401
+2024-05-21 14:27:07,154 - INFO - Request: GET http://127.0.0.1:8008/candidate/users/me/
+2024-05-21 14:27:07,178 - INFO - Response: 401
+2024-05-21 14:27:07,735 - INFO - Request: GET http://127.0.0.1:8008/candidate/users/me/
+2024-05-21 14:27:07,737 - INFO - Response: 401
+2024-05-21 14:32:11,201 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 14:32:11,607 - INFO - Response: 200
+2024-05-21 14:32:20,930 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:32:20,932 - INFO - Response: 401
+2024-05-21 14:33:06,386 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:33:06,387 - INFO - Response: 401
+2024-05-21 14:36:31,677 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:36:31,679 - INFO - Response: 401
+2024-05-21 14:36:37,035 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:36:37,036 - INFO - Response: 401
+2024-05-21 14:37:01,990 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:37:01,993 - INFO - Response: 401
+2024-05-21 14:37:24,124 - INFO - Request: GET http://127.0.0.1:8008/docs
+2024-05-21 14:37:24,125 - INFO - Response: 200
+2024-05-21 14:37:24,411 - INFO - Request: GET http://127.0.0.1:8008/openapi.json
+2024-05-21 14:37:24,413 - INFO - Response: 200
+2024-05-21 14:37:47,149 - INFO - Request: POST http://127.0.0.1:8008/
+2024-05-21 14:37:47,495 - INFO - Response: 200
+2024-05-21 14:38:11,704 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 14:38:12,095 - INFO - Response: 401
+2024-05-21 14:38:16,046 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 14:38:16,405 - INFO - Response: 401
+2024-05-21 14:38:36,103 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 14:38:36,517 - INFO - Response: 401
+2024-05-21 14:38:50,707 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 14:38:51,062 - INFO - Response: 200
+2024-05-21 14:39:11,881 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:39:11,883 - INFO - Response: 401
+2024-05-21 14:39:43,479 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:39:43,481 - INFO - Response: 401
+2024-05-21 14:41:39,271 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c6c53ebc67ad390a7afd0, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c6c53ebc67ad390a7afd0"}, "remainingTimeMS": 30}
+2024-05-21 14:41:41,839 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c6c55e59f8bfa10de025b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c6c55e59f8bfa10de025b"}, "remainingTimeMS": 30}
+2024-05-21 14:41:49,450 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c6c5d434f3e13a9755f7e, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c6c5d434f3e13a9755f7e"}, "remainingTimeMS": 30}
+2024-05-21 14:42:14,504 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:42:14,506 - INFO - Response: 401
+2024-05-21 14:46:17,086 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c6d68477c547c35662167, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c6d68477c547c35662167"}, "remainingTimeMS": 30}
+2024-05-21 14:46:24,579 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:46:24,582 - INFO - Response: 401
+2024-05-21 14:46:57,601 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c6d91e6de94796b1c600c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c6d91e6de94796b1c600c"}, "remainingTimeMS": 30}
+2024-05-21 14:46:59,994 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c6d931a7858107e627515, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c6d931a7858107e627515"}, "remainingTimeMS": 30}
+2024-05-21 14:47:02,492 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c6d96e4a51ccb910ac2f3, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c6d96e4a51ccb910ac2f3"}, "remainingTimeMS": 30}
+2024-05-21 14:47:05,492 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 14:47:05,496 - INFO - Response: 401
+2024-05-21 14:47:33,773 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c6db5924cae921c0d3c1f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c6db5924cae921c0d3c1f"}, "remainingTimeMS": 30}
+2024-05-21 14:47:48,761 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 14:47:48,799 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 14:47:49,201 - INFO - Response: 200
+2024-05-21 14:48:00,321 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:13:04,831 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:13:13,059 - INFO - Request: GET http://127.0.0.1:8008/docs
+2024-05-21 15:13:13,061 - INFO - Response: 200
+2024-05-21 15:13:13,402 - INFO - Request: GET http://127.0.0.1:8008/openapi.json
+2024-05-21 15:13:13,425 - INFO - Response: 200
+2024-05-21 15:14:12,959 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c73f4cb879af5325e4929, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c73f4cb879af5325e4929"}, "remainingTimeMS": 30}
+2024-05-21 15:15:44,838 - INFO - Request: GET http://127.0.0.1:8008/docs
+2024-05-21 15:15:44,839 - INFO - Response: 200
+2024-05-21 15:15:45,048 - INFO - Request: GET http://127.0.0.1:8008/openapi.json
+2024-05-21 15:15:45,077 - INFO - Response: 200
+2024-05-21 15:16:21,401 - INFO - Request: POST http://127.0.0.1:8008/
+2024-05-21 15:16:21,425 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 15:16:21,850 - INFO - Response: 200
+2024-05-21 15:16:24,563 - INFO - Request: POST http://127.0.0.1:8008/
+2024-05-21 15:16:24,567 - INFO - Response: 400
+2024-05-21 15:16:50,021 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 15:16:50,490 - INFO - Response: 401
+2024-05-21 15:16:57,847 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 15:16:58,207 - INFO - Response: 200
+2024-05-21 15:17:12,097 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:18:15,497 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c74e7321ac799fca60643, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c74e7321ac799fca60643"}, "remainingTimeMS": 30}
+2024-05-21 15:18:59,088 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7512216187dff7cec221, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7512216187dff7cec221"}, "remainingTimeMS": 30}
+2024-05-21 15:18:59,107 - INFO - Request: POST http://127.0.0.1:8008/
+2024-05-21 15:18:59,124 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 15:18:59,504 - INFO - Response: 200
+2024-05-21 15:20:04,651 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7554f0b5fb0a423de900, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7554f0b5fb0a423de900"}, "remainingTimeMS": 30}
+2024-05-21 15:20:16,135 - INFO - Request: POST http://127.0.0.1:8008/
+2024-05-21 15:20:16,156 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 15:20:16,529 - INFO - Response: 200
+2024-05-21 15:20:41,761 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 15:20:42,227 - INFO - Response: 200
+2024-05-21 15:20:56,397 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:21:55,196 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c75c383d1472045522620, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c75c383d1472045522620"}, "remainingTimeMS": 30}
+2024-05-21 15:22:03,161 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c75cad70af211bd7ea8b5, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c75cad70af211bd7ea8b5"}, "remainingTimeMS": 30}
+2024-05-21 15:22:48,806 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c75f84e9ab24465a32627, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c75f84e9ab24465a32627"}, "remainingTimeMS": 30}
+2024-05-21 15:22:57,188 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:24:14,517 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c764ed0ee40e2f1820e9b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c764ed0ee40e2f1820e9b"}, "remainingTimeMS": 30}
+2024-05-21 15:24:17,023 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c76502f4a0d845d2632c8, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c76502f4a0d845d2632c8"}, "remainingTimeMS": 30}
+2024-05-21 15:25:30,240 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c769a420a9c8a882b8dd9, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c769a420a9c8a882b8dd9"}, "remainingTimeMS": 30}
+2024-05-21 15:25:36,688 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c76a08f8e36a8bb7a10e1, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c76a08f8e36a8bb7a10e1"}, "remainingTimeMS": 30}
+2024-05-21 15:26:52,480 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c76ec198fb5ee033af035, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c76ec198fb5ee033af035"}, "remainingTimeMS": 30}
+2024-05-21 15:26:55,067 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c76ee62f2abcac373e488, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c76ee62f2abcac373e488"}, "remainingTimeMS": 30}
+2024-05-21 15:27:06,811 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:28:37,986 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7755c46223b77be4d597, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7755c46223b77be4d597"}, "remainingTimeMS": 30}
+2024-05-21 15:32:34,255 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:32:37,951 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c78453b052e6ff8143039, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c78453b052e6ff8143039"}, "remainingTimeMS": 30}
+2024-05-21 15:32:40,811 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:33:49,990 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c788dbc45b47d8e50ce48, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c788dbc45b47d8e50ce48"}, "remainingTimeMS": 30}
+2024-05-21 15:33:50,673 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:36:07,150 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7917befacbf8a9a12ecc, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7917befacbf8a9a12ecc"}, "remainingTimeMS": 30}
+2024-05-21 15:36:24,711 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c792887f0bf53207537f0, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c792887f0bf53207537f0"}, "remainingTimeMS": 30}
+2024-05-21 15:36:29,099 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:36:29,117 - INFO - Response: 400
+2024-05-21 15:37:00,053 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c794be0aa6242196993c6, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c794be0aa6242196993c6"}, "remainingTimeMS": 30}
+2024-05-21 15:37:30,825 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 15:37:30,851 - INFO - Response: 200
+2024-05-21 15:38:58,388 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c79c2f50c27c6cbbbafe5, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c79c2f50c27c6cbbbafe5"}, "remainingTimeMS": 30}
+2024-05-21 15:39:00,824 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c79c45c78982e23dbd71a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c79c45c78982e23dbd71a"}, "remainingTimeMS": 30}
+2024-05-21 15:39:03,426 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c79c7bad31a2e16bc7d31, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c79c7bad31a2e16bc7d31"}, "remainingTimeMS": 30}
+2024-05-21 15:39:06,932 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c79ca829b671e9f5ac15f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c79ca829b671e9f5ac15f"}, "remainingTimeMS": 30}
+2024-05-21 15:39:30,263 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c79e2e118ee335ce52876, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c79e2e118ee335ce52876"}, "remainingTimeMS": 30}
+2024-05-21 15:39:34,151 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c79e53725a5b559c07e5e, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c79e53725a5b559c07e5e"}, "remainingTimeMS": 30}
+2024-05-21 15:39:37,178 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c79e95e8f5471c39f9f42, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c79e95e8f5471c39f9f42"}, "remainingTimeMS": 30}
+2024-05-21 15:39:39,593 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c79ebd87a7063d1191994, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c79ebd87a7063d1191994"}, "remainingTimeMS": 30}
+2024-05-21 15:39:59,311 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c79ffc010628a02045393, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c79ffc010628a02045393"}, "remainingTimeMS": 30}
+2024-05-21 15:40:27,778 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7a1b17857a5af723f7ed, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7a1b17857a5af723f7ed"}, "remainingTimeMS": 30}
+2024-05-21 15:42:49,202 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7aa957086ae50d8996c5, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7aa957086ae50d8996c5"}, "remainingTimeMS": 30}
+2024-05-21 15:45:24,963 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7b44dfef2b7f7f2591a1, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7b44dfef2b7f7f2591a1"}, "remainingTimeMS": 30}
+2024-05-21 15:45:36,995 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7b508476c26f39336b05, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7b508476c26f39336b05"}, "remainingTimeMS": 30}
+2024-05-21 15:46:06,381 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7b6e00c6fdc2bd0fbc75, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7b6e00c6fdc2bd0fbc75"}, "remainingTimeMS": 30}
+2024-05-21 15:46:24,977 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7b801f9ec08bb5984370, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7b801f9ec08bb5984370"}, "remainingTimeMS": 30}
+2024-05-21 15:46:34,501 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7b8a31c38c30f38734f4, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7b8a31c38c30f38734f4"}, "remainingTimeMS": 30}
+2024-05-21 15:49:15,982 - INFO - Request: GET http://127.0.0.1:8008/docs
+2024-05-21 15:49:15,984 - INFO - Response: 200
+2024-05-21 15:49:16,300 - INFO - Request: GET http://127.0.0.1:8008/openapi.json
+2024-05-21 15:49:16,324 - INFO - Response: 200
+2024-05-21 15:49:36,388 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 15:49:36,405 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 15:49:36,736 - INFO - Response: 200
+2024-05-21 15:54:10,915 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7d52fb452da87c282d22, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7d52fb452da87c282d22"}, "remainingTimeMS": 30}
+2024-05-21 15:56:52,746 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c7df4201eb9205765713d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c7df4201eb9205765713d"}, "remainingTimeMS": 30}
+2024-05-21 15:57:04,139 - INFO - Request: GET http://127.0.0.1:8008/docs
+2024-05-21 15:57:04,140 - INFO - Response: 200
+2024-05-21 15:57:04,435 - INFO - Request: GET http://127.0.0.1:8008/openapi.json
+2024-05-21 15:57:04,456 - INFO - Response: 200
+2024-05-21 15:57:18,435 - INFO - Request: POST http://127.0.0.1:8008/candidate/
+2024-05-21 15:57:18,440 - INFO - Response: 401
+2024-05-21 15:58:33,860 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 15:58:33,875 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 15:58:34,223 - INFO - Response: 200
+2024-05-21 16:01:18,409 - INFO - Request: POST http://127.0.0.1:8008/candidate/
+2024-05-21 16:01:18,870 - INFO - Response: 200
+2024-05-21 16:02:30,157 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 16:02:30,172 - INFO - Response: 200
+2024-05-21 16:05:51,938 - INFO - Request: GET http://127.0.0.1:8008/health
+2024-05-21 16:05:51,940 - INFO - Response: 200
+2024-05-21 16:23:42,064 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c843d7a16fe658fca111a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c843d7a16fe658fca111a"}, "remainingTimeMS": 30}
+2024-05-21 16:25:04,397 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c849032f14f42d81b60c4, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c849032f14f42d81b60c4"}, "remainingTimeMS": 30}
+2024-05-21 16:29:12,443 - INFO - Request: POST http://127.0.0.1:8008/candidate/
+2024-05-21 16:29:12,446 - INFO - Response: 401
+2024-05-21 16:29:42,213 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 16:29:42,225 - INFO - Response: 401
+2024-05-21 16:29:52,742 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 16:29:52,746 - INFO - Response: 401
+2024-05-21 16:30:10,661 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 16:30:10,674 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\Self Learning\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 16:30:11,020 - INFO - Response: 200
+2024-05-21 16:30:24,932 - INFO - Request: POST http://127.0.0.1:8008/candidate/
+2024-05-21 16:30:25,026 - INFO - Response: 200
+2024-05-21 16:31:06,876 - INFO - Request: GET http://127.0.0.1:8008/docs
+2024-05-21 16:31:06,877 - INFO - Response: 200
+2024-05-21 16:31:07,213 - INFO - Request: GET http://127.0.0.1:8008/openapi.json
+2024-05-21 16:31:07,234 - INFO - Response: 200
+2024-05-21 16:31:21,069 - INFO - Request: POST http://127.0.0.1:8008/token
+2024-05-21 16:31:21,403 - INFO - Response: 200
+2024-05-21 16:31:31,886 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=john
+2024-05-21 16:31:31,898 - INFO - Response: 200
+2024-05-21 16:31:40,692 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=ars
+2024-05-21 16:31:40,699 - INFO - Response: 200
+2024-05-21 16:32:15,048 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=ars
+2024-05-21 16:32:15,057 - INFO - Response: 200
+2024-05-21 16:32:31,480 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=john
+2024-05-21 16:32:31,494 - INFO - Response: 200
+2024-05-21 16:32:43,196 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=rehman
+2024-05-21 16:32:43,234 - INFO - Response: 200
+2024-05-21 16:33:32,068 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c868b80501d2aa7f35148, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c868b80501d2aa7f35148"}, "remainingTimeMS": 30}
+2024-05-21 16:33:35,416 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c868f13a1944c78ca139c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c868f13a1944c78ca139c"}, "remainingTimeMS": 30}
+2024-05-21 16:33:40,426 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c86946efb15e7d4e65529, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c86946efb15e7d4e65529"}, "remainingTimeMS": 30}
+2024-05-21 16:33:42,714 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c8696f708104186861d83, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c8696f708104186861d83"}, "remainingTimeMS": 30}
+2024-05-21 16:33:45,117 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c8698e372d25bdd2b51f4, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c8698e372d25bdd2b51f4"}, "remainingTimeMS": 30}
+2024-05-21 16:33:49,976 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=rehman
+2024-05-21 16:33:50,017 - INFO - Response: 200
+2024-05-21 16:34:18,165 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c86b948706eb38ef43961, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c86b948706eb38ef43961"}, "remainingTimeMS": 30}
+2024-05-21 16:34:21,417 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c86bd143c1d499c926941, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c86bd143c1d499c926941"}, "remainingTimeMS": 30}
+2024-05-21 16:34:24,452 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c86c0c73cd130632731f3, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c86c0c73cd130632731f3"}, "remainingTimeMS": 30}
+2024-05-21 16:34:24,474 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=rehman
+2024-05-21 16:34:24,494 - INFO - Response: 200
+2024-05-21 16:35:13,834 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c86f1fefdf5bf9af07450, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c86f1fefdf5bf9af07450"}, "remainingTimeMS": 30}
+2024-05-21 16:35:19,234 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=rehman
+2024-05-21 16:35:19,266 - INFO - Response: 200
+2024-05-21 16:35:25,000 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=jo
+2024-05-21 16:35:25,010 - INFO - Response: 200
+2024-05-21 16:35:32,068 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=ali
+2024-05-21 16:35:32,077 - INFO - Response: 200
+2024-05-21 16:35:50,314 - INFO - Request: POST http://127.0.0.1:8008/candidate/
+2024-05-21 16:35:50,343 - INFO - Response: 200
+2024-05-21 16:35:56,055 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=ali
+2024-05-21 16:35:56,123 - INFO - Response: 200
+2024-05-21 16:36:02,195 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=Ah
+2024-05-21 16:36:02,216 - INFO - Response: 200
+2024-05-21 16:36:07,773 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=A
+2024-05-21 16:36:07,782 - INFO - Response: 200
+2024-05-21 16:36:19,672 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=123
+2024-05-21 16:36:19,684 - INFO - Response: 200
+2024-05-21 16:36:24,152 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=ali
+2024-05-21 16:36:24,161 - INFO - Response: 200
+2024-05-21 16:36:29,486 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 16:36:29,509 - INFO - Response: 200
+2024-05-21 16:36:33,640 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10
+2024-05-21 16:36:33,661 - INFO - Response: 200
+2024-05-21 16:36:46,444 - INFO - Request: GET http://127.0.0.1:8008/candidate/all-candidates?page=1&limit=10&search=usm
+2024-05-21 16:36:46,452 - INFO - Response: 200
+2024-05-21 16:47:01,698 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c89b51fe2f4e0d06b8400, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c89b51fe2f4e0d06b8400"}, "remainingTimeMS": 30}
+2024-05-21 16:54:19,868 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664c8b6beed7063fefa91624, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664c8b6beed7063fefa91624"}, "remainingTimeMS": 30}
+2024-05-21 21:47:01,422 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd0043e1bf7786a48ed45, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd0043e1bf7786a48ed45"}, "remainingTimeMS": 30}
+2024-05-21 21:57:26,359 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd276a87de5e5a12f9dcd, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd276a87de5e5a12f9dcd"}, "remainingTimeMS": 30}
+2024-05-21 21:57:30,164 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd27a333dbdd53577ace3, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd27a333dbdd53577ace3"}, "remainingTimeMS": 30}
+2024-05-21 21:58:39,908 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd2bf930a1c2e8b3d6d0d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd2bf930a1c2e8b3d6d0d"}, "remainingTimeMS": 30}
+2024-05-21 22:09:36,886 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd5506db39d5e327c9064, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd5506db39d5e327c9064"}, "remainingTimeMS": 30}
+2024-05-21 22:10:51,196 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd59b213e0f35d7c36422, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd59b213e0f35d7c36422"}, "remainingTimeMS": 30}
+2024-05-21 22:11:09,721 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd5adfca1922e85e5ebfa, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd5adfca1922e85e5ebfa"}, "remainingTimeMS": 30}
+2024-05-21 22:11:15,304 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd5b3a5a995240c4af4bb, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd5b3a5a995240c4af4bb"}, "remainingTimeMS": 30}
+2024-05-21 22:11:20,852 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd5b831c61fb1c3f7c660, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd5b831c61fb1c3f7c660"}, "remainingTimeMS": 30}
+2024-05-21 22:11:25,669 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd5bd9d457e1b13021d9d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd5bd9d457e1b13021d9d"}, "remainingTimeMS": 30}
+2024-05-21 22:11:32,567 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd5c486dd61a5688b5169, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd5c486dd61a5688b5169"}, "remainingTimeMS": 30}
+2024-05-21 22:13:06,170 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd6225f6ca39e3a417e66, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd6225f6ca39e3a417e66"}, "remainingTimeMS": 30}
+2024-05-21 22:13:15,722 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd62b972dde8eefb62e12, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd62b972dde8eefb62e12"}, "remainingTimeMS": 30}
+2024-05-21 22:13:21,018 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd6308d537b3803d6f037, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd6308d537b3803d6f037"}, "remainingTimeMS": 30}
+2024-05-21 22:13:25,372 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd635b36bd7ee702e5876, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd635b36bd7ee702e5876"}, "remainingTimeMS": 30}
+2024-05-21 22:13:34,804 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd63e2b7bbe767770be55, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd63e2b7bbe767770be55"}, "remainingTimeMS": 30}
+2024-05-21 22:13:51,805 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd64fe56ca42cccd46262, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd64fe56ca42cccd46262"}, "remainingTimeMS": 30}
+2024-05-21 22:13:56,004 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd653f70fd8ab61819c45, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd653f70fd8ab61819c45"}, "remainingTimeMS": 30}
+2024-05-21 22:14:19,911 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd66b374953e7908878f8, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd66b374953e7908878f8"}, "remainingTimeMS": 30}
+2024-05-21 22:14:33,597 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd679de67212b30f2e467, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd679de67212b30f2e467"}, "remainingTimeMS": 30}
+2024-05-21 22:14:44,422 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd684884ca177dbcecaea, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd684884ca177dbcecaea"}, "remainingTimeMS": 30}
+2024-05-21 22:14:56,980 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd69035e2aaacb26f0374, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd69035e2aaacb26f0374"}, "remainingTimeMS": 30}
+2024-05-21 22:15:54,684 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd6ca3d71013efd145700, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd6ca3d71013efd145700"}, "remainingTimeMS": 30}
+2024-05-21 22:15:58,479 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd6ce83ae75308f471a95, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd6ce83ae75308f471a95"}, "remainingTimeMS": 30}
+2024-05-21 22:16:16,797 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd6e07caef7d9821a0304, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd6e07caef7d9821a0304"}, "remainingTimeMS": 30}
+2024-05-21 22:16:20,589 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd6e448bbe3fef4633581, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd6e448bbe3fef4633581"}, "remainingTimeMS": 30}
+2024-05-21 22:18:39,404 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cd76f7a41250f082f9576, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cd76f7a41250f082f9576"}, "remainingTimeMS": 30}
+2024-05-21 22:58:30,077 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664ce0c52dac7f9af2097646, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664ce0c52dac7f9af2097646"}, "remainingTimeMS": 30}
+2024-05-21 22:59:15,934 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664ce0f33fbf60100aba699a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664ce0f33fbf60100aba699a"}, "remainingTimeMS": 30}
+2024-05-21 23:00:06,783 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 23:00:06,786 - INFO - Response: 200
+2024-05-21 23:00:08,150 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 23:00:08,202 - INFO - Response: 200
+2024-05-21 23:00:31,305 - INFO - Request: GET http://127.0.0.1:8000/candidate/generate-report
+2024-05-21 23:00:31,307 - INFO - Response: 401
+2024-05-21 23:00:32,288 - INFO - Request: GET http://127.0.0.1:8000/favicon.ico
+2024-05-21 23:00:32,291 - INFO - Response: 404
+2024-05-21 23:00:48,871 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-21 23:00:48,873 - INFO - Response: 401
+2024-05-21 23:01:10,263 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-21 23:01:10,265 - INFO - Response: 401
+2024-05-21 23:01:25,322 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 23:01:25,471 - INFO - Response: 401
+2024-05-21 23:01:34,982 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 23:01:34,987 - INFO - Response: 401
+2024-05-21 23:02:30,581 - INFO - Request: POST http://localhost:8000/
+2024-05-21 23:02:32,980 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Arslan Ahmad\Downloads\CodeGrapher\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-21 23:02:33,696 - INFO - Response: 200
+2024-05-21 23:02:52,576 - INFO - Request: POST http://localhost:8000/token
+2024-05-21 23:02:52,954 - INFO - Response: 200
+2024-05-21 23:02:59,567 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-21 23:05:16,734 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664ce25c95efbfbdb31e79bd, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664ce25c95efbfbdb31e79bd"}, "remainingTimeMS": 30}
+2024-05-21 23:05:20,742 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664ce260fea8b88d326d1167, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664ce260fea8b88d326d1167"}, "remainingTimeMS": 30}
+2024-05-21 23:11:28,402 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-21 23:11:56,367 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664ce3eb14e4a6b1317e2f3d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664ce3eb14e4a6b1317e2f3d"}, "remainingTimeMS": 30}
+2024-05-21 23:11:59,411 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664ce3efd3bca805f24269a0, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664ce3efd3bca805f24269a0"}, "remainingTimeMS": 30}
+2024-05-21 23:12:02,490 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-21 23:12:02,696 - INFO - Response: 200
+2024-05-21 23:20:00,946 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664ce5d032de609774766db3, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664ce5d032de609774766db3"}, "remainingTimeMS": 30}
+2024-05-21 23:20:05,418 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-21 23:20:05,593 - INFO - Response: 200
+2024-05-21 23:24:08,830 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664ce6c811951357a2f9fa46, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664ce6c811951357a2f9fa46"}, "remainingTimeMS": 30}
+2024-05-21 23:24:12,404 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 23:24:12,405 - INFO - Response: 200
+2024-05-21 23:24:12,757 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 23:24:12,816 - INFO - Response: 200
+2024-05-21 23:43:59,136 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-21 23:43:59,370 - INFO - Response: 200
+2024-05-21 23:51:26,888 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664ced2e15d6d717529542f0, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664ced2e15d6d717529542f0"}, "remainingTimeMS": 30}
+2024-05-21 23:51:39,774 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-21 23:51:39,991 - INFO - Response: 200
+2024-05-22 00:02:40,547 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cefd0cd96b98431135d52, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cefd0cd96b98431135d52"}, "remainingTimeMS": 30}
+2024-05-22 00:02:46,008 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 00:02:46,238 - INFO - Response: 200
+2024-05-22 00:16:50,431 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf3219f131a769fc1dae0, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf3219f131a769fc1dae0"}, "remainingTimeMS": 30}
+2024-05-22 00:16:53,685 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 00:16:53,687 - INFO - Response: 401
+2024-05-22 00:17:31,155 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf34a6addcd3f1c3661c5, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf34a6addcd3f1c3661c5"}, "remainingTimeMS": 30}
+2024-05-22 00:17:34,234 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf34d5563dff6ed998aec, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf34d5563dff6ed998aec"}, "remainingTimeMS": 30}
+2024-05-22 00:17:45,105 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf358c7353e7dc48c0c2e, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf358c7353e7dc48c0c2e"}, "remainingTimeMS": 30}
+2024-05-22 00:17:47,688 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 00:17:47,776 - INFO - Response: 200
+2024-05-22 00:18:04,662 - INFO - Request: GET http://localhost:8000/docs
+2024-05-22 00:18:04,664 - INFO - Response: 200
+2024-05-22 00:18:05,007 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-22 00:18:05,041 - INFO - Response: 200
+2024-05-22 00:18:50,168 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf39a04834a08060c7dd1, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf39a04834a08060c7dd1"}, "remainingTimeMS": 30}
+2024-05-22 00:32:34,317 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf6c6608a07905315ce42, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf6c6608a07905315ce42"}, "remainingTimeMS": 30}
+2024-05-22 00:32:41,020 - INFO - Request: GET http://localhost:8000/sentry-debug/
+2024-05-22 00:32:41,022 - INFO - Response: 307
+2024-05-22 00:32:41,224 - INFO - Request: GET http://localhost:8000/sentry-debug
+2024-05-22 00:34:21,777 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf73cbbfd540d0693bc08, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf73cbbfd540d0693bc08"}, "remainingTimeMS": 30}
+2024-05-22 00:34:35,088 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf74957a0616cea6b214f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf74957a0616cea6b214f"}, "remainingTimeMS": 30}
+2024-05-22 00:34:40,992 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf74fdfed5700dcc0e827, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf74fdfed5700dcc0e827"}, "remainingTimeMS": 30}
+2024-05-22 00:34:41,077 - INFO - Request: GET http://127.0.0.1:8000/
+2024-05-22 00:34:41,081 - INFO - Response: 405
+2024-05-22 00:34:47,598 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf755c7c2823d6863bf5f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf755c7c2823d6863bf5f"}, "remainingTimeMS": 30}
+2024-05-22 00:35:36,615 - INFO - Request: GET http://localhost:8000/candidate/all-candidates?page=1&limit=10
+2024-05-22 00:35:36,617 - INFO - Response: 401
+2024-05-22 00:37:33,813 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf7fc4873ce30e0ebc4aa, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf7fc4873ce30e0ebc4aa"}, "remainingTimeMS": 30}
+2024-05-22 00:43:37,598 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf96839d43aad75b325a9, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf96839d43aad75b325a9"}, "remainingTimeMS": 30}
+2024-05-22 00:43:52,958 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf977bb3163cff8576355, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf977bb3163cff8576355"}, "remainingTimeMS": 30}
+2024-05-22 00:43:58,178 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf97d6b047ec991e870d1, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf97d6b047ec991e870d1"}, "remainingTimeMS": 30}
+2024-05-22 00:44:30,486 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf99d2d62911242a20191, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf99d2d62911242a20191"}, "remainingTimeMS": 30}
+2024-05-22 00:44:35,614 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf9a2fd968b75b6398fe9, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf9a2fd968b75b6398fe9"}, "remainingTimeMS": 30}
+2024-05-22 00:45:08,181 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf9c319a69258d1645d13, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf9c319a69258d1645d13"}, "remainingTimeMS": 30}
+2024-05-22 00:45:22,681 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf9d1ebbc86fdf5a0dc2b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf9d1ebbc86fdf5a0dc2b"}, "remainingTimeMS": 30}
+2024-05-22 00:45:38,557 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf9e1d6af900bd6057812, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf9e1d6af900bd6057812"}, "remainingTimeMS": 30}
+2024-05-22 00:45:46,765 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf9e87b742a638f357b25, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf9e87b742a638f357b25"}, "remainingTimeMS": 30}
+2024-05-22 00:45:52,382 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf9ef1146b572e27898bc, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf9ef1146b572e27898bc"}, "remainingTimeMS": 30}
+2024-05-22 00:46:06,564 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cf9fd050ddcef615a3e4b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cf9fd050ddcef615a3e4b"}, "remainingTimeMS": 30}
+2024-05-22 00:47:15,613 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfa4239bfe9750d699f27, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfa4239bfe9750d699f27"}, "remainingTimeMS": 30}
+2024-05-22 00:47:19,860 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfa4696104b46222944c6, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfa4696104b46222944c6"}, "remainingTimeMS": 30}
+2024-05-22 00:47:28,372 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfa4f3de2fff3f5ea596f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfa4f3de2fff3f5ea596f"}, "remainingTimeMS": 30}
+2024-05-22 00:47:37,776 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfa5864fa72873fd7d84b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfa5864fa72873fd7d84b"}, "remainingTimeMS": 30}
+2024-05-22 00:48:41,568 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfa98209bd4ad9a16e560, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfa98209bd4ad9a16e560"}, "remainingTimeMS": 30}
+2024-05-22 00:48:46,983 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfa9d5e23021b261c60fc, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfa9d5e23021b261c60fc"}, "remainingTimeMS": 30}
+2024-05-22 00:48:51,969 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfaa284fb1d1d0890dbba, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfaa284fb1d1d0890dbba"}, "remainingTimeMS": 30}
+2024-05-22 00:49:02,266 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfaad8722197b7af5af5a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfaad8722197b7af5af5a"}, "remainingTimeMS": 30}
+2024-05-22 00:49:37,237 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfad04e87c58056cd00a4, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfad04e87c58056cd00a4"}, "remainingTimeMS": 30}
+2024-05-22 00:51:16,216 - INFO - Request: GET http://localhost:8000/docs
+2024-05-22 00:51:16,219 - INFO - Response: 200
+2024-05-22 00:51:16,618 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-22 00:51:16,663 - INFO - Response: 200
+2024-05-22 00:51:30,187 - INFO - Request: GET http://localhost:8000/health
+2024-05-22 00:51:30,298 - INFO - Response: 200
+2024-05-22 00:54:43,331 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfc02287b7aaa1a3ef1eb, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfc02287b7aaa1a3ef1eb"}, "remainingTimeMS": 30}
+2024-05-22 00:54:51,884 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfc0a7454bd63962e9bf4, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfc0a7454bd63962e9bf4"}, "remainingTimeMS": 30}
+2024-05-22 00:55:04,961 - INFO - Request: GET http://localhost:8000/health
+2024-05-22 00:55:05,070 - INFO - Response: 200
+2024-05-22 00:57:11,060 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfc95fb07a2f9f993cbdf, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfc95fb07a2f9f993cbdf"}, "remainingTimeMS": 30}
+2024-05-22 01:04:04,434 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfe33941d93e4277af40f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfe33941d93e4277af40f"}, "remainingTimeMS": 30}
+2024-05-22 01:04:09,321 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664cfe3897de3339001e1f63, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664cfe3897de3339001e1f63"}, "remainingTimeMS": 30}
+2024-05-21 21:26:44,346 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d1121cfdbd8277094a5a1, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>", "clientId": {"$oid": "664d1121cfdbd8277094a5a1"}, "remainingTimeMS": 29}
+2024-05-21 21:28:03,147 - INFO - Request: GET http://localhost:8000/docs
+2024-05-21 21:28:03,300 - INFO - Response: 200
+2024-05-21 21:28:29,314 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-21 21:28:30,425 - INFO - Response: 200
+2024-05-22 03:37:06,394 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d220f940874f498257ebc, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d220f940874f498257ebc"}, "remainingTimeMS": 30}
+2024-05-22 03:37:33,201 - INFO - Request: GET http://localhost:8000/docs
+2024-05-22 03:37:33,203 - INFO - Response: 200
+2024-05-22 03:37:33,557 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-22 03:37:33,601 - INFO - Response: 200
+2024-05-22 03:38:11,586 - INFO - Request: POST http://localhost:8000/token
+2024-05-22 03:38:11,627 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Arslan Ahmad\Downloads\CodeGrapher\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-22 03:38:12,046 - INFO - Response: 200
+2024-05-22 03:38:26,158 - INFO - Request: POST http://localhost:8000/candidate/
+2024-05-22 03:38:26,367 - INFO - Response: 200
+2024-05-22 03:38:43,415 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 03:38:43,440 - INFO - Response: 200
+2024-05-22 03:39:15,538 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 03:39:15,544 - INFO - Response: 200
+2024-05-22 03:39:54,676 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 03:39:54,686 - INFO - Response: 200
+2024-05-22 03:40:27,049 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d22d9792197ff33e16d94, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d22d9792197ff33e16d94"}, "remainingTimeMS": 30}
+2024-05-22 03:40:32,333 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d22df7962f71a6888fa94, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d22df7962f71a6888fa94"}, "remainingTimeMS": 30}
+2024-05-22 03:40:43,800 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 03:40:43,821 - INFO - Response: 200
+2024-05-22 03:43:17,109 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 03:43:17,121 - INFO - Response: 200
+2024-05-22 03:43:23,540 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d238af3d6f88fd5977ea1, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d238af3d6f88fd5977ea1"}, "remainingTimeMS": 30}
+2024-05-22 03:43:32,138 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 03:43:32,146 - INFO - Response: 200
+2024-05-22 03:44:19,939 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d23c2734bb85336755273, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d23c2734bb85336755273"}, "remainingTimeMS": 30}
+2024-05-22 03:44:25,484 - INFO - Request: GET http://localhost:8000/candidate/generate-report
+2024-05-22 03:44:25,491 - INFO - Response: 200
+2024-05-22 03:44:58,687 - INFO - Request: GET http://127.0.0.1:8000/candidate/generate-report
+2024-05-22 03:44:58,701 - INFO - Response: 200
+2024-05-22 03:51:50,411 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d25846428baf5c4a322d6, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d25846428baf5c4a322d6"}, "remainingTimeMS": 30}
+2024-05-22 03:51:51,399 - INFO - Request: GET http://localhost:8000/docs
+2024-05-22 03:51:51,403 - INFO - Response: 200
+2024-05-22 03:51:51,782 - INFO - Request: GET http://localhost:8000/openapi.json
+2024-05-22 03:51:51,836 - INFO - Response: 200
+2024-05-22 03:52:06,011 - INFO - Request: POST http://localhost:8000/token
+2024-05-22 03:52:06,033 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\Arslan Ahmad\Downloads\CodeGrapher\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-05-22 03:52:06,477 - INFO - Response: 200
+2024-05-22 03:52:26,615 - INFO - Request: GET http://localhost:8000/candidate/all-candidates?page=1&limit=10
+2024-05-22 03:52:26,629 - INFO - Response: 200
+2024-05-22 03:53:50,259 - INFO - Request: PUT http://localhost:8000/candidate/664d2262940874f498257ebd
+2024-05-22 03:53:50,282 - INFO - Response: 200
+2024-05-22 03:55:15,675 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d265237559a486e9916ef, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d265237559a486e9916ef"}, "remainingTimeMS": 30}
+2024-05-22 03:55:27,907 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d265ef3251d0a7cb5103c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d265ef3251d0a7cb5103c"}, "remainingTimeMS": 30}
+2024-05-22 03:55:35,242 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d2665724e8e286d886c0a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d2665724e8e286d886c0a"}, "remainingTimeMS": 30}
+2024-05-22 03:55:59,327 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d267e568f87e832adf381, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d267e568f87e832adf381"}, "remainingTimeMS": 30}
+2024-05-22 03:56:09,544 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d26889f959c9c79333621, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d26889f959c9c79333621"}, "remainingTimeMS": 30}
+2024-05-22 03:56:21,525 - INFO - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "listCollections", "topologyDescription": "<TopologyDescription id: 664d2694986ef6fc1779901f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "664d2694986ef6fc1779901f"}, "remainingTimeMS": 30}

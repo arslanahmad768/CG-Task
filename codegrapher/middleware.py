@@ -17,9 +17,9 @@ logger.handlers = [stream_handler, file_handler]
 
 logger.setLevel(logging.INFO)
 async def log_middleware(request: Request, call_next):
-    logger.info(f"Request: {request.method} {request.url}")
+    logger.info(f"Request log {request.method} {request.url}")
     response = await call_next(request)
-    logger.info(f"Response: {response.status_code}")
+    logger.info(f"Response log {response.status_code}")
     return response
 
 async def custom_exception_handler(request: Request, exc: Exception):
